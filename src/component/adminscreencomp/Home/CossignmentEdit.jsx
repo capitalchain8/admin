@@ -79,17 +79,7 @@ export const AdminCossignmentEditComponent = ({ updateHandler, }) => {
     return (<>
         <div className={styles.homeScreen} >
             <div className={styles.timeline} >
-                {isData && <div className={styles.barCodeArea} ref={componentRef}>
-                    <h3 className={styles.sectionHead}>Skylane Express</h3>
-                    <Barcode value={isData.courier_Reference_No} options={{ format: 'code128' }} renderer="svg" />
-                </div>}
-
-                <button style={{ width: '100%', marginBottom: '30px' }} onClick={handlePrint}>
-                    print
-                </button>
-
                 {cossignmentsList && isData && <form className={styles.editForm} onSubmit={submitHandler}>
-
 
                     <h3 className={styles.sectionHead}>Flight Details</h3>
 
