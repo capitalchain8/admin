@@ -113,8 +113,6 @@ export const AdminCossignmentEditComponent = ({ updateHandler, }) => {
                         <input value={isData.carrier} onChange={(e) => handleChangeHandler(e, 'carrier')} type='text' placeholder='UA' />
                     </div>
 
-
-
                     <div className={styles.inputCards}>
                         <label>
                             checkInEnabled
