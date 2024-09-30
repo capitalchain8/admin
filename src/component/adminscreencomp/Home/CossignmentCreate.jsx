@@ -67,7 +67,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Air Line
                         </label>
 
-                        <input value={isData.airline} onChange={(e) => handleChangeHandler(e, 'airline')} type='text' />
+                        <input value={isData.airline} onChange={(e) => handleChangeHandler(e, 'airline')} type='text'  required/>
                     </div>
 
                     <div className={styles.inputCards}>
@@ -75,13 +75,13 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Airport Fee
                         </label>
 
-                        <input value={isData.airportFee} onChange={(e) => handleChangeHandler(e, 'airportFee')} type='text' />
+                        <input value={isData.airportFee} onChange={(e) => handleChangeHandler(e, 'airportFee')} type='text' required/>
                     </div>
                     <div className={styles.inputCards}>
                         <label>
                             Boarding Till
                         </label>
-                        <input value={isData.boardingTill} onChange={(e) => handleChangeHandler(e, 'boardingTill')} type='time' />
+                        <input value={isData.boardingTill} onChange={(e) => handleChangeHandler(e, 'boardingTill')} type='time' required/>
                     </div>
 
 
@@ -89,7 +89,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Carrier
                         </label>
-                        <input value={isData.carrier} onChange={(e) => handleChangeHandler(e, 'carrier')} type='text' placeholder='UA' />
+                        <input value={isData.carrier} onChange={(e) => handleChangeHandler(e, 'carrier')} type='text' placeholder='UA' required/>
                     </div>
 
 
@@ -99,7 +99,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             checkInEnabled
                         </label>
                         <select value={isData.checkInEnabled} onChange={(e) => handleChangeHandler(e, ' checkInEnabled')}>
-                            <option>
+                            <option selected>
                                 true
 
                             </option>
@@ -121,7 +121,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Flight Class
                         </label>
-                        <input value={isData.class} onChange={(e) => handleChangeHandler(e, 'class')} type='text' />
+                        <input value={isData.class} onChange={(e) => handleChangeHandler(e, 'class')} type='text' required/>
                     </div>
 
 
@@ -129,7 +129,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Cost
                         </label>
-                        <input value={isData.cost} onChange={(e) => handleChangeHandler(e, 'cost')} type='text' />
+                        <input value={isData.cost} onChange={(e) => handleChangeHandler(e, 'cost')} type='text' required/>
                     </div>
 
 
@@ -144,28 +144,28 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Firstname
                         </label>
-                        <input value={isData.firstname} onChange={(e) => handleChangeHandler(e, 'firstname')} type='text' />
+                        <input value={isData.firstname} onChange={(e) => handleChangeHandler(e, 'firstname')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             From
                         </label>
-                        <input value={isData.from} onChange={(e) => handleChangeHandler(e, 'from')} type='text' />
+                        <input value={isData.from} onChange={(e) => handleChangeHandler(e, 'from')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Gate
                         </label>
-                        <input value={isData.gate} onChange={(e) => handleChangeHandler(e, 'gate')} type='text' />
+                        <input value={isData.gate} onChange={(e) => handleChangeHandler(e, 'gate')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Hand
                         </label>
-                        <input value={isData.hand} onChange={(e) => handleChangeHandler(e, 'hand')} type='text' />
+                        <input value={isData.hand} onChange={(e) => handleChangeHandler(e, 'hand')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
@@ -173,7 +173,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Is Freemium
                         </label>
                         <select value={isData.is_freemium} onChange={(e) => handleChangeHandler(e, 'is_freemium')}>
-                            <option value="true">true</option>
+                            <option value="true" selected>true</option>
                             <option value="false">false</option>
                         </select>
                     </div>
@@ -182,35 +182,35 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Other Name
                         </label>
-                        <input value={isData.otherName} onChange={(e) => handleChangeHandler(e, 'otherName')} type='text' />
+                        <input value={isData.otherName} onChange={(e) => handleChangeHandler(e, 'otherName')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Scene
                         </label>
-                        <input value={isData.scene} onChange={(e) => handleChangeHandler(e, 'scene')} type='text' />
+                        <input value={isData.scene} onChange={(e) => handleChangeHandler(e, 'scene')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Seat No
                         </label>
-                        <input value={isData.seatNo} onChange={(e) => handleChangeHandler(e, 'seatNo')} type='text' />
+                        <input value={isData.seatNo} onChange={(e) => handleChangeHandler(e, 'seatNo')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Service Fee
                         </label>
-                        <input value={isData.serviceFee} onChange={(e) => handleChangeHandler(e, 'serviceFee')} type='text' />
+                        <input value={isData.serviceFee} onChange={(e) => handleChangeHandler(e, 'serviceFee')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Tax
                         </label>
-                        <input value={isData.tax} onChange={(e) => handleChangeHandler(e, 'tax')} type='text' />
+                        <input value={isData.tax} onChange={(e) => handleChangeHandler(e, 'tax')} type='text' required/>
                     </div>
 
                  
@@ -219,21 +219,21 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                         <label>
                             Time
                         </label>
-                        <input value={isData.time} onChange={(e) => handleChangeHandler(e, 'time')} type='time' />
+                        <input value={isData.time} onChange={(e) => handleChangeHandler(e, 'time')} type='time' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             To
                         </label>
-                        <input value={isData.to} onChange={(e) => handleChangeHandler(e, 'to')} type='text' />
+                        <input value={isData.to} onChange={(e) => handleChangeHandler(e, 'to')} type='text' required/>
                     </div>
 
                     <div className={styles.inputCards}>
                         <label>
                             Total Cost
                         </label>
-                        <input value={isData.totalCost} onChange={(e) => handleChangeHandler(e, 'totalCost')} type='text' />
+                        <input value={isData.totalCost} onChange={(e) => handleChangeHandler(e, 'totalCost')} type='text' required/>
                     </div>
 
 
@@ -242,7 +242,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Cost Currency
                         </label>
                         <select value={isData.costCurrency} onChange={(e) => handleChangeHandler(e, 'costCurrency')}>
-                            <option value="USD">$ - US Dollar</option>
+                            <option value="USD" selected>$ - US Dollar</option>
                             <option value="EUR">€ - Euro</option>
                             <option value="GBP">£ - British Pound</option>
                             <option value="JPY">¥ - Japanese Yen</option>
@@ -292,7 +292,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Price Disabled
                         </label>
                         <select value={isData.priceDisabled} onChange={(e) => handleChangeHandler(e, 'priceDisabled')}>
-                            <option value="true">true</option>
+                            <option value="true" selected>true</option>
                             <option value="false">false</option>
                         </select>
                     </div>
@@ -303,7 +303,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             Flight
                         </label>
                         <select value={isData.flight} onChange={(e) => handleChangeHandler(e, 'flight')}>
-                            <option value="UA 269">UA 269 - United Airlines</option>
+                            <option value="UA 269" selected>UA 269 - United Airlines</option>
                             <option value="AA 123">AA 123 - American Airlines</option>
                             <option value="DL 456">DL 456 - Delta Airlines</option>
                             <option value="BA 789">BA 789 - British Airways</option>
@@ -329,7 +329,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             onChange={(e) => {
                                 handleChangeHandler(e, 'dateAndTime')
                             }}
-                        />
+                            />
                     </div>
                     
                     <div className={styles.inputCards}>
@@ -342,7 +342,7 @@ export const AdminCossignmentCreateComponent = ({ updateHandler }) => {
                             onChange={(e) => {
                                 handleChangeHandler(e, 'date')
                             }}
-                        />
+                            required/>
                     </div>
 
                     <div className={styles.buttonContainer} >

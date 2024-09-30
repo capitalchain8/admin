@@ -99,7 +99,6 @@ export const checkIfAdminIsLoggedIn = () => {
   }
 }
 
-//https://flight-backend-n3cr.onrender.com
 
 export const loginAdmin = (data) => {
   let dataObj = data
